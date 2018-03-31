@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: powderblue;
+}
+
+h1 {
+	color: blue;
+	font-family: verdana;
+	font-size: 190%;
+	margin: 20px;
+	text-align: center;
+}
+
+h3 {
+	color: blue;
+	font-family: verdana;
+	font-size: 140%;
+	margin: 5px 5px 5px 0px;
+	text-align: left;
+}
+
+p {
+	color: blue;
+	font-family: verdana;
+	font-size: 140%;
+	margin: 5px;
+}
+
+input[type=submit] {
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 21px;
+	background-color: #F36C8C;
+	font-weight: bold;
+	text-shadow: 1px 1px #F36C8C;
+	color: #ffffff;
+	margin: 15px 15px 15px 55px;
+}
+
+a:link {
+	color: purple;
+	font-family: verdana;
+	font-size: 125%;
+	font-weight: bold;
+	margin: 55px 55px 55px 55px;
+}
+
+/* visited link */
+a:visited {
+	color: purple;
+}
+/* mouse over link */
+a:hover {
+	color: red;
+}
+/* selected link */
+a:active {
+	color: yellow;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Give a Personal Gift</title>
+</head>
+
+<body>
+<form action = "AddPersonalGiftServlet" method="post">
+Gift Information<br/>
+Date Given: <input type = "date" name = "dateGiven">Please enter as YYYY-MM-DD<br/>
+Description: <input type = "text" name = "description"><br/>
+Value: <input type = "text" name = "value"><br/>
+Occasion: <input type = "text" name = "occasion"><br/>
+<br/>
+Recipient Information<br/>
+Name: <input type = "text" name = "name"><br/>
+Address: <input type = "text" name = "address"><br/>
+City: <input type = "text" name = "city"><br/>
+State: <input type = "text" name = "state"><br/>
+Postal Code: <input type = "text" name = "postalCode"><br/>
+Birth Date: <input type = "date" name = "birthDate">Please enter as YYYY-MM-DD<br/>
+Relationship: <input type = "text" name = "relationship"><br/>
+<input type = "submit" value="Add Personal Gift">
+</form>
+<a href= "index.html">Back to option list</a><br />
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: powderblue;
+}
+
+h1 {
+	color: blue;
+	font-family: verdana;
+	font-size: 190%;
+	margin: 20px;
+	text-align: center;
+}
+
+h3 {
+	color: blue;
+	font-family: verdana;
+	font-size: 140%;
+	margin: 5px 5px 5px 0px;
+	text-align: left;
+}
+
+p {
+	color: blue;
+	font-family: verdana;
+	font-size: 140%;
+	margin: 5px;
+}
+
+input[type=submit] {
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 21px;
+	background-color: #F36C8C;
+	font-weight: bold;
+	text-shadow: 1px 1px #F36C8C;
+	color: #ffffff;
+	margin: 15px 15px 15px 55px;
+}
+
+a:link {
+	color: purple;
+	font-family: verdana;
+	font-size: 125%;
+	font-weight: bold;
+	margin: 55px 55px 55px 55px;
+}
+
+/* visited link */
+a:visited {
+	color: purple;
+}
+/* mouse over link */
+a:hover {
+	color: red;
+}
+/* selected link */
+a:active {
+	color: yellow;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Give a Charitable Gift</title>
+</head>
+<body>
+<form action = "AddCharitableGiftServlet" method="post">
+Date Given: <input type = "text" name = "dateGiven">Please enter as YYYY-MM-DD<br/>
+Description: <input type= "text" name ="description"><br />
+Value: <input type = "number" name="value"><br />
+<input type = "checkbox" name="taxDeductible" value="Yes"> Gift is tax deductible<br />
+<input type = "checkbox" name="haveReceipt" value="Yes"> You have a receipt<br /><br />
+<h3>Recipient Info</h3>
+Name: <input type = "text" name = "name"><br />
+Address: <input type = "text" name = "address"><br />
+City: <input type = "text" name = "city"><br />
+State: <input type = "text" name = "state"> Please enter 2 position alphanumeric abbreviation<br />
+ZipCode: <input type = "text" name = "postalCode"><br />
+Tax Id: <input type = "text" name = "taxId"><br /><br />
+
+<input type = "submit" value="Add Charitable Gift">
+</form>
+<a href= "index.html">Back to option list</a><br />
+</body>
+</html>
