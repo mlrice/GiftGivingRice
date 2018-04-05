@@ -3,21 +3,21 @@
 <head>
 <style>
 body {
-	background-color: powderblue;
+	background-color: #FF33FE;
 }
 
 h1 {
 	color: blue;
 	font-family: verdana;
 	font-size: 190%;
-	margin: 20px;
+	margin: 32px;
 	text-align: center;
 }
 
 h3 {
 	color: blue;
 	font-family: verdana;
-	font-size: 140%;
+	font-size: 20px;
 	margin: 5px 5px 5px 0px;
 	text-align: left;
 }
@@ -37,12 +37,12 @@ input[type=submit] {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	font-size: 21px;
-	background-color: #F36C8C;
+	background-color: #808080;
 	font-weight: bold;
-	text-shadow: 1px 1px #F36C8C;
+	text-shadow: 1px 1px #808080;
 	color: #ffffff;
 	margin: 15px 15px 15px 55px;
-}
+	}
 
 a:link {
 	color: purple;
@@ -70,21 +70,61 @@ a:active {
 </head>
 
 <body>
+<h1>Give a Personal Gift</h1>
 <form action = "AddPersonalGiftServlet" method="post">
-Gift Information<br/>
-Date Given: <input type = "date" name = "dateGiven">Please enter as YYYY-MM-DD<br/>
-Description: <input type = "text" name = "description"><br/>
-Value: <input type = "text" name = "value"><br/>
-Occasion: <input type = "text" name = "occasion"><br/>
-<br/>
-Recipient Information<br/>
+<br />
+	<h3>Gift Information:</h3>
+		Date Given: <input type="date" name="dateGiven"> Please enter in YYYY-MM-DD format<br /> 
+		Description: <input type="text" name="description"><br /> 
+		Value: <input type="number" name="value"><br /> 
+		Occasion: <select name="occasion">
+			<option value="Birthday">Birthday</option>
+			<option value="Christmas">Christmas</option>
+			<option value="Anniversary">Anniversary</option>
+			<option value="Valentine's Day">Valentine's Day</option>
+			<option value="Easter">Easter</option>
+			<option value="Boss's Day">Boss's Day</option>
+			<option value="Get Well">Get Well</option>
+			<option value="Wedding">Wedding</option>
+			<option value="Baby">Baby</option>
+			<option value="Just Because">Just Because</option>
+			</select>
+		
+<h3>Recipient Information:</h3>
 Name: <input type = "text" name = "name"><br/>
 Address: <input type = "text" name = "address"><br/>
 City: <input type = "text" name = "city"><br/>
 State: <input type = "text" name = "state"><br/>
 Postal Code: <input type = "text" name = "postalCode"><br/>
 Birth Date: <input type = "date" name = "birthDate">Please enter as YYYY-MM-DD<br/>
-Relationship: <input type = "text" name = "relationship"><br/>
+Relationship: <select name = "relationship">
+		<option value="Mother">Mother</option>
+		<option value="Father">Father</option>
+		<option value="Spouse">Spouse</option>
+		<option value="Son">Son</option>
+		<option value="Daughter">Daughter</option>
+		<option value="Aunt">Aunt</option>
+		<option value="Uncle">Uncle</option>
+		<option value="Cousin">Cousin</option>
+		<option value="Grandmother">Grandmother</option>
+		<option value="Grandfather">Grandfather</option>
+		<option value="Stepson">Stepson</option>
+		<option value="Stepdaughter">Stepdaughter</option>
+		<option value="Friend">Friend</option>
+		<option value="Boss">Boss</option>
+		<option value="Sister">Sister</option>
+		<option value="Brother">Brother</option>
+		<option value="Grandson">Grandson</option>
+		<option value="Granddaughter">Granddaughter</option>
+		<option value="Niece">Niece</option>
+		<option value="Nephew">Nephew</option>
+		<option value="Stepmother">Stepmother</option>
+		<option value="Stepfather">Stepfather</option>
+		<option value="Significant Other">Significant Other</option>
+		<option value="Other">Other</option>
+		</select>		
+
+<br>
 <input type = "submit" value="Add Personal Gift">
 </form>
 <a href= "index.html">Back to option list</a><br />

@@ -3,21 +3,21 @@
 <head>
 <style>
 body {
-	background-color: powderblue;
+	background-color: #FF33FE;
 }
 
 h1 {
 	color: blue;
 	font-family: verdana;
 	font-size: 190%;
-	margin: 20px;
+	margin: 32px;
 	text-align: center;
 }
 
 h3 {
 	color: blue;
 	font-family: verdana;
-	font-size: 140%;
+	font-size: 20px;
 	margin: 5px 5px 5px 0px;
 	text-align: left;
 }
@@ -37,9 +37,9 @@ input[type=submit] {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	font-size: 21px;
-	background-color: #F36C8C;
+	background-color: #808080;
 	font-weight: bold;
-	text-shadow: 1px 1px #F36C8C;
+	text-shadow: 1px 1px #808080;
 	color: #ffffff;
 	margin: 15px 15px 15px 55px;
 }
@@ -69,13 +69,15 @@ a:active {
 <title>Give a Charitable Gift</title>
 </head>
 <body>
+<h1>Give a Charitable Gift</h1>
 <form action = "AddCharitableGiftServlet" method="post">
+<h3>Gift Info:</h3>
 Date Given: <input type = "text" name = "dateGiven">Please enter as YYYY-MM-DD<br/>
 Description: <input type= "text" name ="description"><br />
 Value: <input type = "number" name="value"><br />
 <input type = "checkbox" name="taxDeductible" value="Yes"> Gift is tax deductible<br />
 <input type = "checkbox" name="haveReceipt" value="Yes"> You have a receipt<br /><br />
-<h3>Recipient Info</h3>
+<h3>Recipient Info:</h3>
 Name: <input type = "text" name = "name"><br />
 Address: <input type = "text" name = "address"><br />
 City: <input type = "text" name = "city"><br />

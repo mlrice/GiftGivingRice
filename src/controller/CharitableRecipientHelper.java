@@ -8,7 +8,6 @@ import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
 import model.CharityRecipient;
-import model.PersonRecipient;
 import model.Recipient;
 
 public class CharitableRecipientHelper {
@@ -38,7 +37,7 @@ public class CharitableRecipientHelper {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<CharityRecipient> typedQuery = em.createQuery(
-				"select cr from CharityRecipient cr where dr.id = :selectedId",CharityRecipient.class);
+				"select cr from CharityRecipient cr where cr.id = :selectedId",CharityRecipient.class);
 		typedQuery.setParameter("selectedId", toDelete.getId());
 		typedQuery.setMaxResults(1);
 		CharityRecipient result = typedQuery.getSingleResult();

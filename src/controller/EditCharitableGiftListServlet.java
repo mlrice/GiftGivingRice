@@ -9,13 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.CharitableGift;
 import model.CharityRecipient;
-import model.PersonRecipient;
-import model.PersonalGift;
+
 
 /**
  * Servlet implementation class EditCharitableGiftServlet
  */
-@WebServlet("/EditCharitableGiftServlet")
+@WebServlet("/EditCharitableGiftListServlet")
 public class EditCharitableGiftListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

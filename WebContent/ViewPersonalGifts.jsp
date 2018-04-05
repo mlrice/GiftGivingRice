@@ -6,7 +6,7 @@
 <head>
 <style>
 body {
-	background-color: powderblue;
+	background-color: #FF33FE;
 }
 
 h1 {
@@ -40,9 +40,9 @@ input[type=submit] {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	font-size: 21px;
-	background-color: #F36C8C;
+	background-color: #808080;
 	font-weight: bold;
-	text-shadow: 1px 1px #F36C8C;
+	text-shadow: 1px 1px #808080;
 	color: #ffffff;
 	margin: 15px 15px 15px 55px;
 }
@@ -73,7 +73,7 @@ a:active {
 </head>
 <body>
 <h1>Your Personal Giving</h1>
-<form method = "post" action = "EditPersonalGiftServlet">
+<form method = "post" action = "EditPersonalGiftListServlet">
 <table>
 <c:forEach items="${requestScope.allPersonalGifts}" var="currentGift">
 <tr>

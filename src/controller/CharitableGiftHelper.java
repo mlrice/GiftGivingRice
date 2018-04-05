@@ -9,7 +9,6 @@ import javax.persistence.TypedQuery;
 
 import model.CharitableGift;
 import model.Gift;
-import model.PersonalGift;
 
 
 public class CharitableGiftHelper {

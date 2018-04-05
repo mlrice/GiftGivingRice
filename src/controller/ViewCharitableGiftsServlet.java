@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ViewCharitableGiftsServlet
+ * Servlet implementation class ViewCharitableGiftsListServlet
  */
 @WebServlet("/ViewCharitableGiftsServlet")
 public class ViewCharitableGiftsServlet extends HttpServlet {
